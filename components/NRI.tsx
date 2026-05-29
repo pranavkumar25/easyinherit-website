@@ -1,5 +1,5 @@
 import { Globe2, Clock4, FileCheck, ArrowRight } from "lucide-react";
-import { Button } from "./ui/Button";
+import { BookingTrigger } from "./BookingTrigger";
 import { Eyebrow } from "./ui/Eyebrow";
 
 const countries = [
@@ -9,7 +9,7 @@ const countries = [
 
 export function NRI() {
   return (
-    <section id="nri" className="relative overflow-hidden py-28 lg:py-36">
+    <section id="nri" className="relative overflow-hidden py-20 sm:py-24 lg:py-32">
       {/* Section-wide background */}
       <div className="pointer-events-none absolute inset-0 -z-0">
         <div className="absolute inset-0 bg-grid opacity-30 [mask-image:radial-gradient(60%_60%_at_50%_50%,black,transparent_80%)]" />
@@ -17,7 +17,7 @@ export function NRI() {
         <div className="orb right-[5%] bottom-[10%] h-[400px] w-[400px] bg-mint/20 opacity-50" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-6">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <div>
             <Eyebrow tone="mint">For NRIs</Eyebrow>
@@ -29,7 +29,7 @@ export function NRI() {
             <p className="mt-6 max-w-xl text-pretty text-[15px] leading-relaxed text-white/60">
               Distance, time zones and procedural unfamiliarity turn even simple
               inheritance matters into long, uncertain projects. EasyInherit closes
-              that gap — coordinating ageing parents&apos; affairs, property
+              that gap by coordinating ageing parents&apos; affairs, property
               inheritance, succession documentation and asset transfers remotely.
             </p>
 
@@ -52,9 +52,9 @@ export function NRI() {
             </div>
 
             <div className="mt-10">
-              <Button href="#contact" variant="mint" size="lg" icon={<ArrowRight className="h-4 w-4" />}>
+              <BookingTrigger variant="mint" size="lg" icon={<ArrowRight className="h-4 w-4" />}>
                 Talk to an NRI specialist
-              </Button>
+              </BookingTrigger>
             </div>
           </div>
 

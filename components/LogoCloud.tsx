@@ -1,27 +1,34 @@
+/* eslint-disable @next/next/no-img-element */
+
 const partners = [
-  "Sama",
-  "iCreate",
-  "IIT Madras",
-  "Agami",
-  "Vayah Vikas",
-  "Gen S",
+  { name: "Sama", src: "/partners/sama.svg", h: "h-7" },
+  { name: "iCreate", src: "/partners/icreate.png", h: "h-14" },
+  { name: "IIT Madras", src: "/partners/iit-madras.png", h: "h-12" },
+  { name: "Agami", src: "/partners/agami.avif", h: "h-8" },
+  { name: "Vayah Vikas", src: "/partners/vayah-vikas.svg", h: "h-9" },
+  { name: "Gen S", src: "/partners/gen-s.png", h: "h-12" },
 ];
 
 export function LogoCloud() {
   return (
-    <section className="relative border-y border-white/[0.06] bg-midnight-300/60">
-      <div className="mx-auto max-w-7xl px-6 py-12">
-        <div className="flex flex-col items-center gap-8">
+    <section id="partners" className="relative border-y border-white/[0.06] bg-midnight-300/60">
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 py-14">
+        <div className="flex flex-col items-center gap-12">
           <div className="text-[11px] uppercase tracking-[0.22em] text-white/40">
-            Backed by India's leading innovation &amp; ODR ecosystems
+            Partnerships &amp; Affiliations
           </div>
-          <div className="grid w-full grid-cols-2 items-center gap-y-6 sm:grid-cols-3 lg:grid-cols-6">
+          <div className="grid w-full grid-cols-2 items-center gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-6">
             {partners.map((p) => (
               <div
-                key={p}
-                className="flex items-center justify-center text-center text-base font-medium tracking-tight text-white/55 transition-colors hover:text-white"
+                key={p.name}
+                className="group flex h-16 items-center justify-center"
+                title={p.name}
               >
-                {p}
+                <img
+                  src={p.src}
+                  alt={p.name}
+                  className={`${p.h} w-auto max-w-[180px] object-contain opacity-70 brightness-0 invert transition-opacity duration-300 group-hover:opacity-100`}
+                />
               </div>
             ))}
           </div>

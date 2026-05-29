@@ -4,9 +4,9 @@ import { BackgroundFX } from "./ui/BackgroundFX";
 
 export function Founder() {
   return (
-    <section className="relative py-28 lg:py-36">
+    <section className="relative py-20 sm:py-24 lg:py-32">
       <BackgroundFX />
-      <div className="relative mx-auto max-w-5xl px-6">
+      <div className="relative mx-auto max-w-5xl px-5 sm:px-6">
         <div className="relative overflow-hidden rounded-3xl border border-white/[0.08] bg-gradient-to-b from-white/[0.04] to-white/[0.01] p-8 backdrop-blur sm:p-12 lg:p-16">
           <div className="absolute -top-32 left-1/2 h-56 w-[120%] -translate-x-1/2 bg-gradient-to-b from-electric/15 via-mint/10 to-transparent blur-3xl" />
           <div className="absolute inset-0 bg-grid-sm opacity-[0.06] [mask-image:radial-gradient(60%_60%_at_50%_30%,black,transparent_80%)]" />
@@ -35,7 +35,7 @@ export function Founder() {
 
             <div className="mt-10 text-[12.5px] text-white/40">
               Co-developed with <span className="text-white/70">Soubir Bose</span> ·
-              Associated with Sama, iCreate, IIT Madras Research Park, Agami, Vayah Vikas, Gen S
+              Incubated by iCreate and IIT Madras
             </div>
           </div>
         </div>

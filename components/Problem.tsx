@@ -31,9 +31,9 @@ const stats = [
 
 export function Problem() {
   return (
-    <section className="relative py-28 lg:py-36">
+    <section className="relative py-20 sm:py-24 lg:py-32">
       <BackgroundFX variant="section" />
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-6">
         <SectionHeader
           eyebrow="The Transition"
           tone="mint"
@@ -43,10 +43,10 @@ export function Problem() {
               <br /> has already begun.
             </>
           }
-          description="Property, savings, investments, insurance and family businesses are quietly moving between generations — yet inheritance preparedness remains the most overlooked part of Indian financial planning."
+          description="Property, savings, investments, insurance and family businesses are quietly moving between generations, yet inheritance preparedness remains the most overlooked part of Indian financial planning."
         />
 
-        <div className="mt-16 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 sm:mt-16 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((s) => {
             const Icon = s.icon;
             return (

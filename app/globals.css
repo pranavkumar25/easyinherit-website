@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ─── Inter (rsms.me): static + variable ─── */
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1,
+    "tnum" 1,
+    "cv08" 1,
+    "cv10" 1,
+    "cv11" 1,
+    "zero" 1;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+    font-optical-sizing: auto;
+  }
+}
+
 :root {
   --bg: #0A0F22;
   --bg-2: #0E1326;
@@ -24,7 +43,6 @@ body {
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-feature-settings: "ss01", "cv11", "cv02";
 }
 
 /* ─── Selection ─── */

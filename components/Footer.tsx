@@ -1,25 +1,46 @@
 import Link from "next/link";
+import { Linkedin } from "lucide-react";
 import { Logo } from "./ui/Logo";
+import { BookingTrigger } from "./BookingTrigger";
+import { CONTACT } from "@/lib/contact";
 
-const columns = [
+interface FooterLink {
+  label: string;
+  href: string;
+  external?: boolean;
+}
+
+const columns: { title: string; links: FooterLink[] }[] = [
   {
     title: "Services",
     links: [
-      "Will drafting",
-      "Succession certificates",
-      "Property transfer",
-      "Probate",
-      "Death claims",
-      "Family mediation",
+      { label: "Will drafting", href: "#services" },
+      { label: "Succession certificates", href: "#services" },
+      { label: "Property transfer", href: "#services" },
+      { label: "Probate", href: "#services" },
+      { label: "Death claims", href: "#services" },
+      { label: "Family mediation", href: "#services" },
     ],
   },
   {
     title: "Company",
-    links: ["About", "How it works", "Coverage", "NRI", "Partners", "FAQ"],
+    links: [
+      { label: "About", href: "#about" },
+      { label: "How it works", href: "#approach" },
+      { label: "Coverage", href: "#cities" },
+      { label: "NRI", href: "#nri" },
+      { label: "Partners", href: "#partners" },
+      { label: "Recognition", href: "#recognition" },
+      { label: "FAQ", href: "#faq" },
+    ],
   },
   {
     title: "Contact",
-    links: ["+91 99024 35733", "info@easyinherit.in", "WhatsApp", "Book a call"],
+    links: [
+      { label: CONTACT.phone, href: CONTACT.whatsapp, external: true },
+      { label: CONTACT.email, href: CONTACT.emailHref },
+      { label: "WhatsApp", href: CONTACT.whatsapp, external: true },
+    ],
   },
 ];
 
@@ -31,26 +52,33 @@ export function Footer() {
         <div className="absolute inset-0 bg-grid opacity-[0.08] [mask-image:radial-gradient(60%_60%_at_50%_30%,black,transparent_80%)]" />
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 py-20">
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-6 py-20">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <Logo height={36} />
             <p className="mt-5 max-w-sm text-[14px] leading-relaxed text-white/55">
-              A modern operating layer for Indian inheritance — helping families
+              A modern operating layer for Indian inheritance, helping families
               and NRIs organise inheritance matters with clarity, structure and
               preparedness.
             </p>
 
-            <div className="mt-7 flex gap-2">
-              {["X", "in", "M"].map((s) => (
-                <Link
-                  key={s}
-                  href="#"
-                  className="grid h-9 w-9 place-items-center rounded-lg border border-white/10 bg-white/[0.03] text-[12px] font-medium text-white/65 transition-all hover:border-mint/30 hover:bg-mint/[0.08] hover:text-mint"
-                >
-                  {s}
-                </Link>
-              ))}
+            {/* Social — LinkedIn only */}
+            <div className="mt-7 flex items-center gap-3">
+              <Link
+                href={CONTACT.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="EasyInherit on LinkedIn"
+                className="group inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3.5 py-1.5 text-[12.5px] font-medium text-white/70 transition-all hover:border-mint/30 hover:bg-mint/[0.08] hover:text-mint"
+              >
+                <Linkedin className="h-3.5 w-3.5" />
+                LinkedIn
+              </Link>
+
+              {/* Quick book consultation */}
+              <BookingTrigger variant="ghost" size="md" icon={false}>
+                Book a call
+              </BookingTrigger>
             </div>
           </div>
 
@@ -62,12 +90,14 @@ export function Footer() {
                 </h5>
                 <ul className="mt-4 space-y-3">
                   {col.links.map((l) => (
-                    <li key={l}>
+                    <li key={`${col.title}-${l.label}`}>
                       <Link
-                        href="#"
+                        href={l.href}
+                        target={l.external ? "_blank" : undefined}
+                        rel={l.external ? "noopener noreferrer" : undefined}
                         className="text-[13.5px] text-white/65 transition-colors hover:text-white"
                       >
-                        {l}
+                        {l.label}
                       </Link>
                     </li>
                   ))}

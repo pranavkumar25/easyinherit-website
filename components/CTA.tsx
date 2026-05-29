@@ -1,16 +1,18 @@
-import { Phone, MessageCircle, Mail, ArrowRight } from "lucide-react";
+import { MessageCircle, Mail, ArrowRight } from "lucide-react";
 import { Button } from "./ui/Button";
+import { BookingTrigger } from "./BookingTrigger";
 import { Eyebrow } from "./ui/Eyebrow";
 import { BackgroundFX } from "./ui/BackgroundFX";
+import { CONTACT } from "@/lib/contact";
 
 export function CTA() {
   return (
-    <section id="contact" className="relative py-28 lg:py-36">
-      <div className="relative mx-auto max-w-7xl px-6">
-        <div className="relative overflow-hidden rounded-[28px] border border-white/[0.08] bg-gradient-to-b from-midnight-200 to-midnight-400 p-10 lg:p-16">
+    <section id="contact" className="relative py-20 sm:py-24 lg:py-32">
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-6">
+        <div className="relative overflow-hidden rounded-[28px] border border-white/[0.08] bg-gradient-to-b from-midnight-200 to-midnight-400 p-7 sm:p-10 lg:p-16">
           <BackgroundFX variant="cta" />
 
-          <div className="relative grid gap-12 lg:grid-cols-5 lg:items-end">
+          <div className="relative grid gap-10 lg:grid-cols-5 lg:items-end lg:gap-12">
             <div className="lg:col-span-3">
               <Eyebrow tone="mint">Get started</Eyebrow>
               <h2 className="mt-6 text-balance text-[clamp(36px,5.5vw,68px)] font-medium leading-[1] tracking-tightest text-white">
@@ -20,21 +22,20 @@ export function CTA() {
               </h2>
               <p className="mt-6 max-w-xl text-pretty text-[15.5px] leading-relaxed text-white/65">
                 Whether you&apos;re drafting your first will, organising documents,
-                claiming an asset, or navigating an inheritance from across the world —
+                claiming an asset, or navigating an inheritance from across the world,
                 our team will help you take the next step with clarity.
               </p>
 
               <div className="mt-9 flex flex-wrap items-center gap-3">
-                <Button
-                  href="#"
+                <BookingTrigger
                   variant="mint"
                   size="lg"
                   icon={<ArrowRight className="h-4 w-4" />}
                 >
                   Book a consultation
-                </Button>
+                </BookingTrigger>
                 <Button
-                  href="https://wa.me/919902435733"
+                  href={CONTACT.whatsapp}
                   variant="ghost"
                   size="lg"
                   icon={<MessageCircle className="h-4 w-4" />}
@@ -47,18 +48,18 @@ export function CTA() {
             <div className="lg:col-span-2">
               <div className="overflow-hidden rounded-2xl border border-white/10 bg-midnight-200/70 backdrop-blur-xl">
                 <ContactRow
-                  icon={Phone}
+                  icon={MessageCircle}
                   label="Call or WhatsApp"
-                  value="+91 99024 35733"
-                  href="tel:+919902435733"
+                  value={CONTACT.phone}
+                  href={CONTACT.whatsapp}
                   tone="electric"
                 />
                 <div className="hairline mx-5" />
                 <ContactRow
                   icon={Mail}
                   label="Email"
-                  value="info@easyinherit.in"
-                  href="mailto:info@easyinherit.in"
+                  value={CONTACT.email}
+                  href={CONTACT.emailHref}
                   tone="mint"
                 />
                 <div className="hairline mx-5" />
@@ -111,6 +112,8 @@ function ContactRow({
     <a
       href={href}
       className="group flex items-center gap-4 p-5 transition-colors hover:bg-white/[0.03]"
+      target={href.startsWith("http") ? "_blank" : undefined}
+      rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
     >
       <div
         className={`grid h-11 w-11 place-items-center rounded-xl ${

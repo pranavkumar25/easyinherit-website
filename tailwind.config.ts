@@ -46,7 +46,21 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "ui-sans-serif", "system-ui", "sans-serif"],
+        sans: [
+          "InterVariable",
+          "Inter",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+        ],
+        display: [
+          "InterDisplay",
+          "InterVariable",
+          "Inter",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+        ],
       },
       letterSpacing: {
         tightest: "-0.045em",
@@ -71,7 +85,16 @@ const config: Config = {
         "marquee": "marquee 38s linear infinite",
         "pulse-slow": "pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         "spin-slow": "spin 30s linear infinite",
+        "spin-slower": "spin 60s linear infinite",
         "fade-up": "fadeUp 0.8s ease-out both",
+        "float-soft": "floatSoft 7s ease-in-out infinite",
+        "float-medium": "floatSoft 9s ease-in-out infinite",
+        "float-slow": "floatSoft 11s ease-in-out infinite",
+        "glow-pulse": "glowPulse 5s ease-in-out infinite",
+        "dash-flow": "dashFlow 10s linear infinite",
+        "shimmer": "shimmer 7s linear infinite",
+        "drift": "drift 14s ease-in-out infinite",
+        "drift-reverse": "driftReverse 16s ease-in-out infinite",
       },
       keyframes: {
         marquee: {
@@ -81,6 +104,29 @@ const config: Config = {
         fadeUp: {
           from: { opacity: "0", transform: "translateY(12px)" },
           to: { opacity: "1", transform: "translateY(0)" },
+        },
+        floatSoft: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-12px)" },
+        },
+        glowPulse: {
+          "0%, 100%": { opacity: "0.55", transform: "scale(1)" },
+          "50%": { opacity: "1", transform: "scale(1.06)" },
+        },
+        dashFlow: {
+          to: { strokeDashoffset: "-40" },
+        },
+        shimmer: {
+          "0%": { backgroundPosition: "200% 0%" },
+          "100%": { backgroundPosition: "-200% 0%" },
+        },
+        drift: {
+          "0%, 100%": { transform: "translate(0, 0)" },
+          "50%": { transform: "translate(20px, -15px)" },
+        },
+        driftReverse: {
+          "0%, 100%": { transform: "translate(0, 0)" },
+          "50%": { transform: "translate(-20px, 15px)" },
         },
       },
     },

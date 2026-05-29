@@ -7,6 +7,7 @@ import { Approach } from "@/components/Approach";
 import { NRI } from "@/components/NRI";
 import { Cities } from "@/components/Cities";
 import { Founder } from "@/components/Founder";
+import { Recognition } from "@/components/Recognition";
 import { FAQ } from "@/components/FAQ";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
@@ -23,6 +24,7 @@ export default function Page() {
       <NRI />
       <Cities />
       <Founder />
+      <Recognition />
       <FAQ />
       <CTA />
       <Footer />
