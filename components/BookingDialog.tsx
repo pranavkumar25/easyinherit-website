@@ -54,13 +54,13 @@ export function BookingDialog({ isOpen, onClose }: Props) {
 
   return (
     <div
-      className="fixed inset-0 z-[100] grid place-items-center overflow-y-auto bg-black/70 p-4 backdrop-blur-md"
+      className="fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-black/70 p-4 backdrop-blur-md"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
     >
       <div
-        className="relative my-8 w-full max-w-lg overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-b from-midnight-200 to-midnight-400 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.8)]"
+        className="relative my-auto flex max-h-[calc(100dvh-2rem)] w-full max-w-lg flex-col overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-b from-midnight-200 to-midnight-400 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.8)]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Background fx */}
@@ -77,7 +77,7 @@ export function BookingDialog({ isOpen, onClose }: Props) {
           <X className="h-4 w-4" />
         </button>
 
-        <div className="relative p-6 sm:p-9">
+        <div className="relative overflow-y-auto p-6 sm:p-9">
           {!submitted ? (
             <>
               <div className="text-[10.5px] font-medium uppercase tracking-[0.20em] text-mint">

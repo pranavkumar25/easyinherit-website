@@ -10,7 +10,7 @@ export type BlogCategory =
   | "Wills & Estate"
   | "NRI & Succession"
   | "Rights & Law"
-  | "Family Planning"
+  | "Estate Planning"
   | "Digital Assets";
 
 export interface BlogBlock {
@@ -173,7 +173,7 @@ export const BLOGS: Blog[] = [
     title: "Money matters: don't delay the 'talk' with your family",
     excerpt:
       "Only 2-3% of Indians make a will during their lifetime. Why we delay the inheritance talk — and why we shouldn't.",
-    category: "Family Planning",
+    category: "Estate Planning",
     date: "2022-05",
     readTime: "6 min",
     body: [
@@ -238,7 +238,7 @@ export const BLOGS: Blog[] = [
     title: "5 quick inheritance conversation starters with your ageing parents",
     excerpt:
       "Talking about inheritance with parents isn't easy. Five gentle ways to start the conversation.",
-    category: "Family Planning",
+    category: "Estate Planning",
     date: "2022-06",
     readTime: "5 min",
     body: [
@@ -275,7 +275,7 @@ export const BLOGS: Blog[] = [
     title: "Estate planning and women: it is time to know all that matters",
     excerpt:
       "59% of Indian women don't make independent financial decisions. Estate planning awareness for women is no longer optional.",
-    category: "Family Planning",
+    category: "Estate Planning",
     date: "2022-06",
     readTime: "5 min",
     body: [
@@ -417,7 +417,7 @@ export const BLOGS: Blog[] = [
     title: "Want to bequeath assets to caregivers who are nonfamily? Register your will",
     excerpt:
       "Many elderly Indians are cared for by non-family. To pass anything to them, a registered will is the only way.",
-    category: "Family Planning",
+    category: "Estate Planning",
     date: "2022-09",
     readTime: "5 min",
     body: [
@@ -448,7 +448,7 @@ export const BLOGS: Blog[] = [
     title: "Worried about a prodigal child? Register your will to disinherit them",
     excerpt:
       "A 'will' is not just for inheritance — it can also be used to protect your other heirs from a financially reckless child.",
-    category: "Family Planning",
+    category: "Estate Planning",
     date: "2022-09",
     readTime: "5 min",
     body: [
@@ -510,7 +510,7 @@ export const BLOGS: Blog[] = [
     title: "Women should take charge of their inheritance planning. Here's how",
     excerpt:
       "Financial independence is the cornerstone of women's empowerment. Inheritance planning deserves equal attention.",
-    category: "Family Planning",
+    category: "Estate Planning",
     date: "2022-10",
     readTime: "5 min",
     body: [
@@ -603,7 +603,7 @@ export const BLOGS: Blog[] = [
     title: "How to protect minor children and their inheritance",
     excerpt:
       "Inheritance rights of stepchildren, adopted, illegitimate, live-in couples' children and minors — a complete legal guide.",
-    category: "Family Planning",
+    category: "Estate Planning",
     date: "2022-12",
     readTime: "7 min",
     body: [
