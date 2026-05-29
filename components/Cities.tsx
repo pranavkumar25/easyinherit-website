@@ -83,7 +83,7 @@ export function Cities() {
               key={c.name}
               className="group relative flex flex-col gap-1.5 overflow-hidden rounded-xl border border-white/[0.07] bg-white/[0.02] px-3.5 py-3 transition-all duration-300 hover:border-mint/30 hover:bg-mint/[0.05] sm:px-4 sm:py-3.5"
             >
-              <span className="text-[9.5px] uppercase tracking-[0.14em] text-white/35">
+              <span className="text-[10px] uppercase tracking-[0.14em] text-white/50">
                 {c.tag}
               </span>
               <div className="flex items-center gap-1.5">

@@ -8,6 +8,7 @@ import { NRI } from "@/components/NRI";
 import { Cities } from "@/components/Cities";
 import { Founder } from "@/components/Founder";
 import { Recognition } from "@/components/Recognition";
+import { Blogs } from "@/components/Blogs";
 import { FAQ } from "@/components/FAQ";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
@@ -25,6 +26,7 @@ export default function Page() {
       <Cities />
       <Founder />
       <Recognition />
+      <Blogs />
       <FAQ />
       <CTA />
       <Footer />

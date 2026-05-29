@@ -30,7 +30,7 @@ export function Hero() {
           {/* Eyebrow */}
           <Eyebrow tone="mint">
             <Sparkles className="h-3 w-3" />
-            Now serving PAN India &amp; NRIs globally
+            Now serving Pan-India &amp; NRIs globally
           </Eyebrow>
 
           {/* Headline */}

@@ -7,12 +7,12 @@ import { BookingTrigger } from "./BookingTrigger";
 import { Logo } from "./ui/Logo";
 
 const links = [
-  { label: "Services", href: "#services" },
-  { label: "How it works", href: "#approach" },
-  { label: "NRI", href: "#nri" },
-  { label: "Coverage", href: "#cities" },
-  { label: "Recognition", href: "#recognition" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Services", href: "/#services" },
+  { label: "How it works", href: "/#approach" },
+  { label: "NRI", href: "/#nri" },
+  { label: "Coverage", href: "/#cities" },
+  { label: "Blogs", href: "/blogs" },
+  { label: "FAQ", href: "/#faq" },
 ];
 
 export function Navbar() {

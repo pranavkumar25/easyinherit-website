@@ -50,7 +50,7 @@ export function Approach() {
           description="Four structured stages designed to replace decades of fragmented, reactive inheritance handling with one accountable, modern workflow."
         />
 
-        <div className="mt-20 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 sm:mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((s) => {
             const Icon = s.icon;
             return (
