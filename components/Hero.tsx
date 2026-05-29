@@ -28,13 +28,16 @@ export function Hero() {
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6">
         <div className="relative mx-auto flex max-w-5xl flex-col items-center text-center">
           {/* Eyebrow */}
-          <Eyebrow tone="mint">
+          <Eyebrow
+            tone="mint"
+            className="text-[10px] tracking-[0.14em] sm:text-xs sm:tracking-[0.18em]"
+          >
             <Sparkles className="h-3 w-3" />
             Now serving Pan-India &amp; NRIs globally
           </Eyebrow>
 
           {/* Headline */}
-          <h1 className="mt-7 text-balance text-[clamp(44px,8.4vw,112px)] font-medium leading-[0.96] tracking-tightest text-white sm:mt-8">
+          <h1 className="mt-7 text-balance text-[30px] font-medium leading-[0.98] tracking-tightest text-white sm:mt-8 sm:text-[clamp(44px,8.4vw,112px)] sm:leading-[0.96]">
             <span className="glow-text">Inheritance,</span>
             <br />
             <span className="gradient-text">simplified for life.</span>
@@ -66,9 +69,29 @@ export function Hero() {
             </Button>
           </div>
 
+          {/* Mobile-only trust pills — mirrors the desktop floating decorations */}
+          <MobileTrustPills />
+
         </div>
       </div>
     </section>
+  );
+}
+
+/* ───────────────────────────────────────────────────────────
+   MOBILE TRUST PILLS — same content as the desktop floats,
+   arranged in a 2×2 grid below the CTAs so the hero has
+   matching trust signals on both viewports without overlap.
+   ─────────────────────────────────────────────────────────── */
+
+function MobileTrustPills() {
+  return (
+    <div className="mt-10 flex w-full flex-wrap justify-center gap-2.5 md:hidden">
+      <StatusPill icon={Globe2} label="Pan-India · Active" tone="mint" />
+      <StatusPill icon={ShieldCheck} label="Verified · Sama" tone="electric" />
+      <TrendPill />
+      <MiniBadge icon={Stamp} tone="electric" />
+    </div>
   );
 }
 
