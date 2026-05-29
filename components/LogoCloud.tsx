@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 
 const partners = [
-  { name: "Sama", src: "/partners/sama.svg", h: "h-7" },
+  { name: "Sahamati", src: "/partners/sahamati.svg", h: "h-9" },
   { name: "iCreate", src: "/partners/icreate.png", h: "h-14" },
   { name: "IIT Madras Research Park", src: "/partners/iit-madras.png", h: "h-14" },
-  { name: "Agami", src: "/partners/agami.avif", h: "h-8" },
+  { name: "Sama", src: "/partners/agami.avif", h: "h-8" },
   { name: "Vayah Vikas", src: "/partners/vayah-vikas.svg", h: "h-9" },
   { name: "Gen S", src: "/partners/gen-s.png", h: "h-12" },
 ];

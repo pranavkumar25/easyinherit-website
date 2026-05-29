@@ -23,9 +23,8 @@ export function Hero() {
             <span>
               Serving clients across India &amp;{" "}
               <span className="whitespace-nowrap">
-                NRI<span className="text-[0.75em]">s</span>
-              </span>{" "}
-              worldwide
+                NRI<span className="text-[0.75em]">s</span> worldwide
+              </span>
             </span>
           </Eyebrow>
 

@@ -8,11 +8,11 @@ import {
   Handshake,
   Scale,
   MessagesSquare,
-  ArrowUpRight,
   Check,
 } from "lucide-react";
 import { SectionHeader } from "./ui/SectionHeader";
 import { BackgroundFX } from "./ui/BackgroundFX";
+import { ExploreServiceButton } from "./ExploreServiceButton";
 
 export function Services() {
   return (
@@ -63,7 +63,6 @@ export function Services() {
             description="Structure your intentions, identify key assets and reduce future confusion for your family."
             icon={FileSignature}
             tag="03"
-            badge="Foundation"
             tone="electric"
           />
 
@@ -206,10 +205,7 @@ function FeatureCard({
 
         {/* CTA pinned to bottom */}
         <div className="mt-auto pt-7">
-          <div className="inline-flex items-center gap-1.5 text-[13px] font-medium text-white/80">
-            Explore service
-            <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </div>
+          <ExploreServiceButton />
         </div>
       </div>
     </div>
