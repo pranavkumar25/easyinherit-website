@@ -15,9 +15,18 @@ export function Hero() {
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6">
         <div className="relative mx-auto flex max-w-5xl flex-col items-center text-center">
           {/* Eyebrow */}
-          <Eyebrow tone="mint">
-            <Sparkles className="h-3 w-3" />
-            Serving clients across India &amp; NRI<span className="text-[0.75em]">s</span> worldwide
+          <Eyebrow
+            tone="mint"
+            className="text-[10.5px] tracking-[0.1em] sm:text-xs sm:tracking-[0.18em]"
+          >
+            <Sparkles className="h-3 w-3 shrink-0" />
+            <span>
+              Serving clients across India &amp;{" "}
+              <span className="whitespace-nowrap">
+                NRI<span className="text-[0.75em]">s</span>
+              </span>{" "}
+              worldwide
+            </span>
           </Eyebrow>
 
           {/* Headline */}
