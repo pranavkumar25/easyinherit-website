@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "EasyInherit | Inheritance, Succession & Estate Services in India",
   description:
-    "EasyInherit helps Indian families and NRIs with wills, succession certificates, property transfer after death, probate, death claims & inheritance disputes. Get clarity today.",
+    "EasyInherit helps Indian families and NRIs with wills, succession certificates, property transfer after death, letter of administration, death claims & inheritance disputes. Get clarity today.",
 };
 
 export const viewport: Viewport = {

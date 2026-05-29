@@ -1,12 +1,4 @@
-import {
-  ArrowRight,
-  Sparkles,
-  MessageCircle,
-  Globe2,
-  ShieldCheck,
-  Landmark,
-  type LucideIcon,
-} from "lucide-react";
+import { ArrowRight, Sparkles, MessageCircle } from "lucide-react";
 import { Button } from "./ui/Button";
 import { BookingTrigger } from "./BookingTrigger";
 import { Eyebrow } from "./ui/Eyebrow";
@@ -25,7 +17,7 @@ export function Hero() {
           {/* Eyebrow */}
           <Eyebrow tone="mint">
             <Sparkles className="h-3 w-3" />
-            Now serving Pan-India &amp; NRIs globally
+            Serving clients across India &amp; NRIs worldwide
           </Eyebrow>
 
           {/* Headline */}
@@ -60,65 +52,9 @@ export function Hero() {
               {CONTACT.phone}
             </Button>
           </div>
-
-          {/* Trust bar — cohesive inline metrics (replaces scattered floats) */}
-          <TrustBar />
         </div>
       </div>
     </section>
-  );
-}
-
-/* ───────────────────────────────────────────────────────────
-   TRUST BAR — centred metrics inside one subtle pill,
-   hairline-separated. Wraps gracefully on mobile.
-   ─────────────────────────────────────────────────────────── */
-
-function TrustBar() {
-  return (
-    <div className="mt-8 sm:mt-10">
-      <div className="mx-auto flex flex-col items-stretch gap-y-3 rounded-2xl border border-white/[0.08] bg-white/[0.02] px-6 py-4 backdrop-blur-sm sm:flex-row sm:items-center sm:gap-x-9 sm:px-8">
-        <Metric icon={Landmark} tone="mint" value="247+" label="Estates handled" />
-        <Divider />
-        <Metric icon={Globe2} tone="electric" value="8" label="Countries served" />
-        <Divider />
-        <Metric icon={ShieldCheck} tone="mint" value="Sama" label="Verified partner" />
-      </div>
-    </div>
-  );
-}
-
-function Divider() {
-  return <span className="hidden h-8 w-px bg-white/10 sm:block" />;
-}
-
-function Metric({
-  icon: Icon,
-  tone,
-  value,
-  label,
-}: {
-  icon: LucideIcon;
-  tone: "mint" | "electric";
-  value: string;
-  label: string;
-}) {
-  const accent =
-    tone === "mint"
-      ? "bg-mint/12 text-mint"
-      : "bg-electric/15 text-electric-200";
-  return (
-    <div className="flex items-center gap-3">
-      <div className={`grid h-9 w-9 shrink-0 place-items-center rounded-xl ${accent}`}>
-        <Icon className="h-4 w-4" strokeWidth={2.2} />
-      </div>
-      <div className="flex flex-col text-left leading-tight">
-        <span className="text-[15px] font-semibold text-white">{value}</span>
-        <span className="text-[11.5px] uppercase tracking-[0.12em] text-white/45">
-          {label}
-        </span>
-      </div>
-    </div>
   );
 }
 

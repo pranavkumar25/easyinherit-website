@@ -94,7 +94,7 @@ export function BlogCard({ blog, index = 0 }: { blog: Blog; index?: number }) {
         </p>
 
         {/* Footer — pushed to bottom */}
-        <div className="mt-7 flex items-end justify-between border-t border-white/[0.06] pt-4 lg:mt-auto lg:pt-5">
+        <div className="mt-6 flex items-end justify-between md:mt-auto md:pt-6">
           <div className="text-[11.5px] uppercase tracking-[0.14em] text-white/40">
             {formatBlogDate(blog.date)}
           </div>

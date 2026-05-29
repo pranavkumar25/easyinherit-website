@@ -17,7 +17,7 @@ const columns: { title: string; links: FooterLink[] }[] = [
       { label: "Will drafting", href: "/#services" },
       { label: "Succession certificates", href: "/#services" },
       { label: "Property transfer", href: "/#services" },
-      { label: "Probate", href: "/#services" },
+      { label: "Letter of administration", href: "/#services" },
       { label: "Death claims", href: "/#services" },
       { label: "Family mediation", href: "/#services" },
     ],
@@ -31,7 +31,7 @@ const columns: { title: string; links: FooterLink[] }[] = [
       { label: "NRI", href: "/#nri" },
       { label: "Recognition", href: "/#recognition" },
       { label: "Blogs", href: "/blogs" },
-      { label: "FAQ", href: "/#faq" },
+      { label: "FAQs", href: "/#faq" },
     ],
   },
   {

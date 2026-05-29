@@ -65,7 +65,7 @@ export function FAQ() {
       <BackgroundFX />
       <div className="relative mx-auto max-w-4xl px-5 sm:px-6">
         <SectionHeader
-          eyebrow="FAQ"
+          eyebrow="FAQs"
           tone="electric"
           title={
             <>

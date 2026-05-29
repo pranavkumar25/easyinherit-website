@@ -12,7 +12,7 @@ const links = [
   { label: "NRI", href: "/#nri" },
   { label: "Coverage", href: "/#cities" },
   { label: "Blogs", href: "/blogs" },
-  { label: "FAQ", href: "/#faq" },
+  { label: "FAQs", href: "/#faq" },
 ];
 
 export function Navbar() {

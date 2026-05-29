@@ -36,16 +36,16 @@ export function Services() {
           {/* Featured large card */}
           <FeatureCard
             className="col-span-12 lg:col-span-7 lg:row-span-2"
-            badge="Foundation"
-            title="Will Drafting & Estate Planning"
-            description="Structure your intentions, identify key assets and reduce future confusion. The most important document a person creates for their family, built right, the first time."
-            icon={FileSignature}
-            tone="electric"
+            badge="Most requested"
+            title="Property Transfer After Death"
+            description="Mutation, ownership changes, joint property and ancestral land — organised and coordinated across states so the title reaches the right hands without confusion."
+            icon={Home}
+            tone="mint"
             features={[
-              "Personalised, jurisdiction-aware will templates",
-              "Asset register & nomination tracking",
-              "Executor and witness coordination",
-              "Secure document vault with versioning",
+              "Mutation & title transfer across municipalities",
+              "Joint, ancestral & self-acquired property handling",
+              "Multi-state coordination & documentation",
+              "Updated heirship and ownership records",
             ]}
           />
 
@@ -59,16 +59,17 @@ export function Services() {
 
           <Card
             className="col-span-12 sm:col-span-6 lg:col-span-5"
-            title="Property Transfer After Death"
-            description="Mutation, ownership, joint property, ancestral land, organised across states."
-            icon={Home}
+            title="Will Drafting & Estate Planning"
+            description="Structure your intentions, identify key assets and reduce future confusion for your family."
+            icon={FileSignature}
             tag="03"
-            tone="mint"
+            badge="Foundation"
+            tone="electric"
           />
 
           <Card
             className="col-span-12 sm:col-span-6 lg:col-span-4"
-            title="Probate & Administration"
+            title="Letter of Administration"
             description="Demystified jurisdictions, paperwork and timelines."
             icon={ScrollText}
             tag="04"
@@ -80,7 +81,6 @@ export function Services() {
             description="Banks, insurance, mutual funds, pension, coordinated end-to-end."
             icon={Banknote}
             tag="05"
-            badge="Most requested"
             tone="mint"
           />
 

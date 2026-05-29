@@ -72,7 +72,6 @@ export function CTA() {
                       "Wills",
                       "Succession",
                       "Property",
-                      "Probate",
                       "NRI",
                       "Mediation",
                       "Claims",
