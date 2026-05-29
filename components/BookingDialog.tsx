@@ -77,39 +77,26 @@ export function BookingDialog({ isOpen, onClose }: Props) {
           <X className="h-4 w-4" />
         </button>
 
-        <div className="relative p-7 sm:p-9">
+        <div className="relative p-6 sm:p-9">
           {!submitted ? (
             <>
               <div className="text-[10.5px] font-medium uppercase tracking-[0.20em] text-mint">
                 Book a consultation
               </div>
-              <h2 className="mt-2 text-[26px] font-semibold leading-tight tracking-tight text-white">
+              <h2 className="mt-2 text-[22px] sm:text-[26px] font-semibold leading-tight tracking-tight text-white">
                 Let&apos;s simplify inheritance for your family.
               </h2>
               <p className="mt-2 text-[13.5px] leading-relaxed text-white/55">
                 Tell us a bit about your situation. Our team will reach out within 24 hours.
               </p>
 
-              <form className="mt-7 space-y-3.5" onSubmit={handleSubmit}>
+              <form className="mt-6 sm:mt-7 space-y-3.5" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 gap-3.5 sm:grid-cols-2">
                   <Field label="Full name" name="name" type="text" required placeholder="Your name" />
                   <Field label="Phone" name="phone" type="tel" required placeholder="+91 ..." />
                 </div>
                 <Field label="Email" name="email" type="email" required placeholder="you@example.com" />
                 <Field label="City / Country" name="location" type="text" placeholder="Mumbai · India / UAE / US ..." />
-                <SelectField label="What can we help with?" name="service" required>
-                  <option value="">Select a service</option>
-                  <option>Will drafting &amp; estate planning</option>
-                  <option>Succession certificate</option>
-                  <option>Property transfer after death</option>
-                  <option>Probate &amp; administration</option>
-                  <option>Death claims (bank/insurance/MF)</option>
-                  <option>Legal heir documentation</option>
-                  <option>Family settlement coordination</option>
-                  <option>Inheritance dispute / ODR</option>
-                  <option>NRI inheritance</option>
-                  <option>Not sure / just exploring</option>
-                </SelectField>
                 <Field label="Brief note (optional)" name="message" type="textarea" placeholder="Anything you'd like us to know..." />
 
                 <button
@@ -189,39 +176,6 @@ function Field({
         placeholder={placeholder}
         className={`${baseInput} h-11`}
       />
-    </label>
-  );
-}
-
-function SelectField({
-  label,
-  name,
-  required,
-  children,
-}: {
-  label: string;
-  name: string;
-  required?: boolean;
-  children: React.ReactNode;
-}) {
-  return (
-    <label className="block">
-      <span className="mb-1 block text-[10.5px] font-medium uppercase tracking-[0.14em] text-white/45">
-        {label}
-      </span>
-      <select
-        name={name}
-        required={required}
-        className="h-11 w-full appearance-none rounded-xl border border-white/10 bg-white/[0.04] px-3.5 text-[14px] text-white outline-none transition-all focus:border-mint/40 focus:bg-white/[0.06] focus:ring-2 focus:ring-mint/20"
-        style={{
-          backgroundImage:
-            "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-opacity='0.5' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E\")",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "right 12px center",
-        }}
-      >
-        {children}
-      </select>
     </label>
   );
 }
