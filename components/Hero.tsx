@@ -17,7 +17,7 @@ export function Hero() {
           {/* Eyebrow */}
           <Eyebrow tone="mint">
             <Sparkles className="h-3 w-3" />
-            Serving clients across India &amp; NRIs worldwide
+            Serving clients across India &amp; NRI<span className="text-[0.75em]">s</span> worldwide
           </Eyebrow>
 
           {/* Headline */}
