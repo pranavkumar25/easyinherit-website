@@ -40,7 +40,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "If you're named executor, you hold the key to someone's deepest intentions. A practical 6-step guide to fulfilling that duty with care.",
     category: "Wills & Estate",
-    date: "2022-04",
+    date: "2025-08",
     readTime: "6 min",
     body: [
       p(
@@ -81,7 +81,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "Decide how to be treated medically through a living will — and ensure your dignity is preserved during your final moments.",
     category: "Wills & Estate",
-    date: "2022-04",
+    date: "2026-02",
     readTime: "5 min",
     body: [
       p(
@@ -110,7 +110,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "Until same-sex marriages are legally recognised in India, a will is the only way to ensure your partner inherits your assets.",
     category: "Rights & Law",
-    date: "2022-04",
+    date: "2025-11",
     readTime: "5 min",
     body: [
       p(
@@ -142,7 +142,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "Inter-faith marriages bring distinct inheritance challenges in India. A will is often the only answer.",
     category: "Rights & Law",
-    date: "2022-05",
+    date: "2025-06",
     readTime: "5 min",
     body: [
       p(
@@ -174,7 +174,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "Only 2-3% of Indians make a will during their lifetime. Why we delay the inheritance talk — and why we shouldn't.",
     category: "Estate Planning",
-    date: "2022-05",
+    date: "2026-04",
     readTime: "6 min",
     body: [
       p(
@@ -205,7 +205,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "An NRI returns home to face his mother's passing — and discovers he has just seven days to untangle her inheritance.",
     category: "NRI & Succession",
-    date: "2022-05",
+    date: "2025-09",
     readTime: "6 min",
     body: [
       p(
@@ -239,7 +239,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "Talking about inheritance with parents isn't easy. Five gentle ways to start the conversation.",
     category: "Estate Planning",
-    date: "2022-06",
+    date: "2026-01",
     readTime: "5 min",
     body: [
       p(
@@ -276,7 +276,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "59% of Indian women don't make independent financial decisions. Estate planning awareness for women is no longer optional.",
     category: "Estate Planning",
-    date: "2022-06",
+    date: "2025-12",
     readTime: "5 min",
     body: [
       p(
@@ -304,7 +304,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "Digital assets are growing but inheritance rules around them remain murky. How to plan succession for your crypto holdings.",
     category: "Digital Assets",
-    date: "2022-07",
+    date: "2025-07",
     readTime: "4 min",
     body: [
       p(
@@ -332,7 +332,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "Live-in relationships have grown common, but inheritance law hasn't quite caught up. Here's where things stand.",
     category: "Rights & Law",
-    date: "2022-07",
+    date: "2026-05",
     readTime: "4 min",
     body: [
       p(
@@ -357,7 +357,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "Email IDs, social media accounts, photos — what happens to them when you're no longer here? A guide to digital legacy.",
     category: "Digital Assets",
-    date: "2022-08",
+    date: "2025-10",
     readTime: "4 min",
     body: [
       p(
@@ -386,7 +386,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "13 million Indians live abroad. For NRIs, inheriting from a deceased parent in India is a multi-month maze. Here's the map.",
     category: "NRI & Succession",
-    date: "2022-08",
+    date: "2026-03",
     readTime: "6 min",
     body: [
       p(
@@ -418,7 +418,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "Many elderly Indians are cared for by non-family. To pass anything to them, a registered will is the only way.",
     category: "Estate Planning",
-    date: "2022-09",
+    date: "2025-08",
     readTime: "5 min",
     body: [
       p(
@@ -449,7 +449,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "A 'will' is not just for inheritance — it can also be used to protect your other heirs from a financially reckless child.",
     category: "Estate Planning",
-    date: "2022-09",
+    date: "2026-02",
     readTime: "5 min",
     body: [
       p(
@@ -480,7 +480,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "Choosing an executor is one of the most important parts of writing a will. Here's how to choose right.",
     category: "Wills & Estate",
-    date: "2022-10",
+    date: "2025-06",
     readTime: "5 min",
     body: [
       p(
@@ -511,7 +511,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "Financial independence is the cornerstone of women's empowerment. Inheritance planning deserves equal attention.",
     category: "Estate Planning",
-    date: "2022-10",
+    date: "2025-11",
     readTime: "5 min",
     body: [
       p(
@@ -543,7 +543,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "Inheritance law in India still recognises only two genders. For the transgender community, equality remains a distant dream.",
     category: "Rights & Law",
-    date: "2022-11",
+    date: "2026-01",
     readTime: "5 min",
     body: [
       p(
@@ -572,7 +572,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "Prolonged property disputes are common in India. A will is the simplest way to prevent them.",
     category: "Wills & Estate",
-    date: "2022-11",
+    date: "2025-09",
     readTime: "5 min",
     body: [
       p(
@@ -604,7 +604,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "Inheritance rights of stepchildren, adopted, illegitimate, live-in couples' children and minors — a complete legal guide.",
     category: "Estate Planning",
-    date: "2022-12",
+    date: "2026-05",
     readTime: "7 min",
     body: [
       p(
@@ -644,7 +644,7 @@ export const BLOGS: Blog[] = [
     excerpt:
       "Death certificates, succession certificates, nominees vs heirs — every essential inheritance question, answered.",
     category: "Wills & Estate",
-    date: "2022-12",
+    date: "2025-12",
     readTime: "7 min",
     body: [
       p(
