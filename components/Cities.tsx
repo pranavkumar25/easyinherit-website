@@ -63,7 +63,7 @@ const cities = [
 
 export function Cities() {
   return (
-    <section className="relative py-20 sm:py-24 lg:py-32">
+    <section id="cities" className="relative py-20 sm:py-24 lg:py-32">
       <BackgroundFX />
       <div className="relative mx-auto max-w-7xl px-5 sm:px-6">
         <SectionHeader
